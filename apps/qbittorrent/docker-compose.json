@@ -16,16 +16,16 @@
       },
       "volumes": [
         {
-          "source": "~/docker/qbt",
-          "target": "/config"
+          "hostPath": "~/docker/qbt",
+          "containerPath": "/config"
         },
         {
-          "source": "/mnt",
-          "target": "/mnt"
+          "hostPath": "/mnt",
+          "containerPath": "/mnt"
         },
         {
-          "source": "~/docker/themeparkdev/98-themepark-qbittorrent",
-          "target": "/etc/cont-init.d/98-themepark"
+          "hostPath": "~/docker/themeparkdev/98-themepark-qbittorrent",
+          "containerPath": "/etc/cont-init.d/98-themepark"
         }
       ]
     }
