@@ -1,11 +1,11 @@
-
 {
-  "services": {
-    "qbt": {
-      "cap_add": ["NET_ADMIN"],
+  "services": [
+    {
+      "name": "qbt",
+      "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
       "container_name": "qbt",
       "dns": ["1.1.1.1"],
-      "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
+      "cap_add": ["NET_ADMIN"],
       "ports": [
         "8089:8089",
         "8118:8118"
@@ -20,6 +20,5 @@
         "~/docker/themeparkdev/98-themepark-qbittorrent:/etc/cont-init.d/98-themepark"
       ]
     }
-  }
+  ]
 }
-
