@@ -4,6 +4,7 @@
     {
       "name": "qbt",
       "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
+      "capAdd": ["NET_ADMIN"], 
       "addPorts": [
         {
           "hostPort": 8089,
