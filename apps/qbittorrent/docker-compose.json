@@ -1,0 +1,25 @@
+
+{
+  "services": {
+    "qbt": {
+      "cap_add": ["NET_ADMIN"],
+      "container_name": "qbt",
+      "dns": ["1.1.1.1"],
+      "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
+      "ports": [
+        "8089:8089",
+        "8118:8118"
+      ],
+      "sysctls": {
+        "net.ipv4.conf.all.src_valid_mark": "1",
+        "net.ipv6.conf.all.disable_ipv6": "1"
+      },
+      "volumes": [
+        "~/docker/qbt:/config",
+        "/mnt:/mnt",
+        "~/docker/themeparkdev/98-themepark-qbittorrent:/etc/cont-init.d/98-themepark"
+      ]
+    }
+  }
+}
+

@@ -1,7 +1,7 @@
 {
-  "name": "example-appstore",
+  "name": "dulanic-appstore",
   "version": "1.0.0",
-  "description": "",
+  "description": "My own personal app-store",
   "main": "index.js",
   "type": "module",
   "scripts": {
