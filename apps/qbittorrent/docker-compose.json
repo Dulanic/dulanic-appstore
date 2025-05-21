@@ -16,7 +16,7 @@
       },
       "volumes": [
         {
-          "hostPath": "~/docker/qbt",
+          "hostPath": "${APP_DATA_DIR}/config",
           "containerPath": "/config"
         },
         {
