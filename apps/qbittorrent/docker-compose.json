@@ -1,11 +1,18 @@
 {
-"$schema": "https://raw.githubusercontent.com/runtipi/runtipi-appstore/refs/heads/master/apps/dynamic-compose-schema.json",
+  "$schema": "https://raw.githubusercontent.com/runtipi/runtipi-appstore/refs/heads/master/apps/dynamic-compose-schema.json",
   "services": [
     {
+      "name": "qbt",
       "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
       "addPorts": [
-        "8089:8089",
-        "8118:8118"
+        {
+          "hostPort": 8089,
+          "containerPort": 8089
+        },
+        {
+          "hostPort": 8118,
+          "containerPort": 8118
+        }
       ],
       "sysctls": {
         "net.ipv4.conf.all.src_valid_mark": 1,
