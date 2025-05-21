@@ -2,7 +2,6 @@
 "$schema": "https://raw.githubusercontent.com/runtipi/runtipi-appstore/refs/heads/master/apps/dynamic-compose-schema.json",
   "services": [
     {
-      "name": "qbt",
       "image": "ghcr.io/hotio/qbittorrent:release-5.0.5",
       "addPorts": [
         "8089:8089",
