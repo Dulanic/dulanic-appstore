@@ -22,10 +22,6 @@
         {
           "hostPath": "/mnt",
           "containerPath": "/mnt"
-        },
-        {
-          "hostPath": "~/docker/themeparkdev/98-themepark-qbittorrent",
-          "containerPath": "/etc/cont-init.d/98-themepark"
         }
       ]
     }
